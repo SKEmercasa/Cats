@@ -1,38 +1,127 @@
 .App {
-  text-align: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(./components/modelImage/BgPiece.png);
+    background-blend-mode: overlay, color;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper-app {
+    height: 650px;
+    width: 100%;
+    color: azure;
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'Exo 2';
+    text-align: center;
+    filter: drop-shadow(0px 1px 0.5px #000000);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+    object-fit: contain;
+    height: 480px;
+    width: 320px;
+    margin-left: 48px;
+    margin-right: 48px;
+    cursor: pointer;
+    user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card div {
+    margin-left: 49px;
+    font-weight: bold;
+    font-family: "Trebuchet MS";
+}
+
+.card div:first-child {
+    margin-top: 19px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.card div:nth-child(2) {
+    font-size: 48px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card div:nth-child(3) {
+    font-size: 24px;
+    color: #000000;
+}
+
+.card div:nth-child(4) {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+.card div:nth-child(5),
+div:nth-child(6) {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 3px;
+    font-weight: normal;
+}
+
+.weightFor {
+    padding-top: 190px;
+    padding-left: 160px;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.weightFor section:first-child {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-weight: normal;
+}
+
+.weightFor section:last-child {
+    font-size: 24px;
+    color: white;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-weight: normal;
+}
+
+.relationCard {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relationCard div {
+    width: 320px;
+    margin-left: 48px;
+    margin-right: 48px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Trebuchet MS";
+    filter: drop-shadow(0px 1px 0.5px #000000);
 }
